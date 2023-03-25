@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/sonar?serverTimezone=UTC
+      username: root
+      password: root
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+wxmini:
+  appid: wxd12256b5af5ecf26
+  secret: 69990cb0423a2afdb97a2f35a439a8b7
