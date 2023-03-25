@@ -3,9 +3,12 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/sonar?serverTimezone=UTC
+      #url: jdbc:mysql://localhost:3306/sonar?serverTimezone=UTC
+      url: jdbc:mysql://10.5.102.4:3306/xcx?serverTimezone=UTC
       username: root
-      password: root
+      #password: root
+      password: Huan0504!
+
 
 mybatis-plus:
   global-config:
