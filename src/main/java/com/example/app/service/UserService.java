@@ -55,10 +55,10 @@ public class UserService {
         String res = HttpUtil.get(replaceUrl);
         System.out.println(res);
 
-        String uuid = UUID.randomUUID().toString();
-        redisTemplate.opsForValue().set(RedisKey.WX_SESSION_ID + uuid, res, 30, TimeUnit.MINUTES);
-        Map<String, String> map = new HashMap<>();
-        map.put("sessionId", uuid);
+//        String uuid = UUID.randomUUID().toString();
+//        redisTemplate.opsForValue().set(RedisKey.WX_SESSION_ID + uuid, res, 30, TimeUnit.MINUTES);
+//        Map<String, String> map = new HashMap<>();
+//        map.put("sessionId", uuid);
         return res;
     }
 
